@@ -2,7 +2,7 @@
 
 CMPEasyPermission is a permission library for Compose Multiplatform, supporting both Android and iOS.
 
-![CMPEasyPermission](https://github.com/user-attachments/assets/4ac153b8-af49-4270-aa8e-2649d85d9ed1)
+<img width="960" alt="Hero-image - CMPEasyPermission" src="https://github.com/user-attachments/assets/655eca59-ae52-45e8-b59e-68b83e5fad83">
 
 ## Installation
 
@@ -74,7 +74,7 @@ Box(
 
 ## Demo
 
-![CMPEasyPermission](https://github.com/user-attachments/assets/54481052-5ed3-410e-81d8-07f30720351d)
+![CMPEasyPermission](https://github.com/user-attachments/assets/6a60f170-4755-47a0-b32b-04cb21aee06e)
 
 - For Demo [Checkout This Class](https://github.com/Chaintech-Network/CMPEasyPermission/blob/main/composeApp/src/commonMain/kotlin/network/chaintech/cmpeasyPpermissiondemo/App.kt)
 
