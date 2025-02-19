@@ -4,7 +4,8 @@ plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.compose)
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.mavenPublish)
 }
 
 kotlin {
@@ -18,14 +19,14 @@ kotlin {
             }
         }
     }
-
+    
     listOf(
         iosX64(),
         iosArm64(),
         iosSimulatorArm64()
     ).forEach {
         it.binaries.framework {
-            baseName = "ComposeApp"
+            baseName = "easycmppermission"
             isStatic = true
         }
     }
@@ -37,44 +38,32 @@ kotlin {
             implementation(compose.material3)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
-            implementation(libs.easy.permission)
+            implementation(libs.sdp.ssp)
         }
+
         androidMain.dependencies {
-            implementation(compose.uiTooling)
-            implementation(libs.androidx.activityCompose)
+            implementation("com.google.accompanist:accompanist-permissions:0.34.0")
         }
 
         iosMain.dependencies {
         }
-
     }
 }
 
 android {
-    namespace = "network.chaintech.cmpeasypermissiondemo"
-    compileSdk = 35
-
+    namespace = "network.chaintech.cmpeasypermission"
+    compileSdk = 34
     defaultConfig {
         minSdk = 24
-        targetSdk = 35
-
-        applicationId = "network.chaintech.cmpeasypermissiondemo.androidApp"
-        versionCode = 1
-        versionName = "1.0.0"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-    sourceSets["main"].apply {
-        manifest.srcFile("src/androidMain/AndroidManifest.xml")
-        res.srcDirs("src/androidMain/res")
-    }
-
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     buildFeatures {
-        //enables a Compose tooling support in the AndroidStudio
         compose = true
     }
+}
+dependencies {
+    implementation(libs.androidx.core)
 }

@@ -1,6 +1,5 @@
 package network.chaintech.cmpeasypermissiondemo
 
-import androidx.compose.animation.core.*
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -14,11 +13,8 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
-import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -26,14 +22,9 @@ import androidx.compose.ui.unit.sp
 import cmpeasypermissiondemo.composeapp.generated.resources.*
 import network.chaintech.cmpeasypermissiondemo.theme.AppTheme
 import network.chaintech.cmpeasypermissiondemo.theme.ColorPalette
-import network.chaintech.cmpeasypermissiondemo.theme.LocalThemeIsDark
-import network.chaintech.cmpeasypermission.DialogParams
 import network.chaintech.cmpeasypermission.PermissionState
 import network.chaintech.cmpeasypermission.RequestPermission
-import org.jetbrains.compose.resources.Font
 import org.jetbrains.compose.resources.painterResource
-import org.jetbrains.compose.resources.stringResource
-import org.jetbrains.compose.resources.vectorResource
 
 @Composable
 fun App() = AppTheme {
