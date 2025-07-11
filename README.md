@@ -1,7 +1,7 @@
 # CMPEasyPermission
 [![Maven Central](https://img.shields.io/maven-central/v/network.chaintech/cmp-easy-permission.svg)](https://central.sonatype.com/artifact/network.chaintech/cmp-easy-permission)
-[![Kotlin](https://img.shields.io/badge/kotlin-v2.1.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
-[![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-v1.7.3-blue)](https://github.com/JetBrains/compose-multiplatform)
+[![Kotlin](https://img.shields.io/badge/kotlin-v2.2.0-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-v1.8.2-blue)](https://github.com/JetBrains/compose-multiplatform)
 
 ![badge-android](http://img.shields.io/badge/platform-android-3DDC84.svg?style=flat)
 ![badge-ios](http://img.shields.io/badge/platform-ios-FF375F.svg?style=flat)
@@ -16,7 +16,7 @@ Add the dependency to your `build.gradle.kts` file:
 
 ```
 commonMain.dependencies {
-    implementation("network.chaintech:cmp-easy-permission:1.0.2")
+    implementation("network.chaintech:cmp-easy-permission:1.0.3")
 }
 ```
 

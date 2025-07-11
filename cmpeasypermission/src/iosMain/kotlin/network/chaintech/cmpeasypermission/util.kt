@@ -6,5 +6,5 @@ import platform.UIKit.UIApplicationOpenSettingsURLString
 
 internal fun openAppSettings() {
     val settingsUrl = NSURL(string = UIApplicationOpenSettingsURLString)
-    UIApplication.sharedApplication().openURL(settingsUrl)
+    UIApplication.sharedApplication().openURL(url = settingsUrl, options = emptyMap<Any?, Any?>(), completionHandler = { _ -> })
 }

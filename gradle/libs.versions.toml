@@ -1,12 +1,12 @@
 [versions]
 
-kotlin = "2.1.0"
-compose = "1.7.3"
-agp = "8.7.3"
-androidx-activityCompose = "1.10.0"
-easy-permission-version = "1.0.2"
-sdp-version = "1.0.5"
-core = "1.15.0"
+kotlin = "2.2.0"
+compose = "1.8.2"
+agp = "8.10.0"
+androidx-activityCompose = "1.10.1"
+easy-permission-version = "1.0.3"
+sdp-version = "1.0.7"
+core = "1.16.0"
 
 [libraries]
 
